@@ -3,16 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>VOLCANO</title>
+    <title>VOLCANO | Official Metal Band</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="hero">
         <div class="hero-content">
-           <h1>VOLCANO</h1>
-            <p>Rock / Live / Énergie</p>
-            <a href="#concerts" class="btn">Voir les dates</a>
+            <h1>VOLCANO</h1>
+            <p>Heavy Metal / Live Éruptif / Chaos</p>
+            <a href="#concerts" class="btn btn-fire">Rejoindre la lave</a>
         </div>
     </header>
 
@@ -20,58 +20,84 @@
         <h2>Dernières Sorties</h2>
         <div class="media-grid">
             <div class="media-card">
-                <h3>Notre dernier concert</h3>
-                <p>Ecoutez ça ici :</p>
-                <audio controls src="machine.mp3" style="width: 100%; margin-top: 15px; border-radius: 0px;">
-                    Votre navigateur ne prend pas en charge l'écoute de ce fichier.
-                </audio>
-                <audio controls src="volcano.mp3" style="width: 100%; margin-top: 15px; border-radius: 0px;">
-                    Votre navigateur ne prend pas en charge l'écoute de ce fichier.
-                </audio>
+                <h3>Le Son du Cratère</h3>
+                <p>Montez le volume, réveillez le magma :</p>
+                
+                <div class="audio-player">
+                    <span class="track-title">01. Machine</span>
+                    <audio controls src="machine.mp3">
+                        Votre navigateur ne prend pas en charge l'écoute de ce fichier.
+                    </audio>
+                </div>
+                
+                <div class="audio-player">
+                    <span class="track-title">02. Volcano</span>
+                    <audio controls src="volcano.mp3">
+                        Votre navigateur ne prend pas en charge l'écoute de ce fichier.
+                    </audio>
+                </div>
             </div>
         </div>
     </section>
 
     <section class="container" id="concerts">
-        <h2>Prochaines Dates</h2>
-        <table class="concert-table">
-            <tr>
-                <td><strong>     </strong></td>
-                <td>     </td>
-                <td>    </td>
-                <td><a href="#" class="btn-small">Infos</a></td>
-            </tr>
-            <tr>
-                <td><strong>      </strong></td>
-                <td>     </td>
-                <td>     </td>
-                <td><a href="#" class="btn-small">Infos</a></td>
-            </tr>
-        </table>
+        <h2>Prochaines Éruptions</h2>
+        <div class="table-responsive">
+            <table class="concert-table">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Lieu</th>
+                        <th>Ville</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>15/10/2026</strong></td>
+                        <td>Le Cratère Club</td>
+                        <td>Hell-Bourg</td>
+                        <td><a href="#" class="btn-small">Tickets</a></td>
+                    </tr>
+                    <tr>
+                        <td><strong>31/10/2026</strong></td>
+                        <td>Hellfest Open Air</td>
+                        <td>Clisson</td>
+                        <td><a href="#" class="btn-small">Tickets</a></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
     </section>
 
     <section class="container" id="galerie">
-        <h2>Le Groupe en Action</h2>
+        <h2>Le Groupe en Fusion</h2>
         <div class="gallery-grid">
             <div class="gallery-item"><img src="Galerie1.JPG" alt="Volcano Live 1"></div>
             <div class="gallery-item"><img src="Galerie2.JPG" alt="Volcano Live 2"></div>
             <div class="gallery-item"><img src="Galerie3.JPG" alt="Volcano Live 3"></div>
             <div class="gallery-item"><img src="Galerie4.JPG" alt="Volcano Live 4"></div>
-            
         </div>
     </section>
 
     <footer id="contact">
         <h2>Contact & Booking</h2>
-        <p>Pour toute demande de concert : <a href="mailto:contact@volcano.yt">contact@volcano.yt</a></p>
+        <p class="booking-text">Pour invoquer le groupe sur scène : <a href="mailto:contact@volcano.yt">contact@volcano.yt</a></p>
+        
         <div class="social-links">
-            <a href="https://www.instagram.com/volcano_le_groupe/">Instagram</a> | <a href="#">YouTube</a> | <a href="https://www.facebook.com/profile.php?id=61591286116008">Facebook</a>
+            <a href="https://www.instagram.com/volcano_le_groupe/" target="_blank">Instagram</a>
+            <a href="#" target="_blank">YouTube</a>
+            <a href="https://www.facebook.com/profile.php?id=61591286116008" target="_blank">Facebook</a>
         </div>
+        
         <div class="qr-container">
-            <p>Scannez pour nous suivre sur Instagram :</p>
+            <p>Scannez pour propager le virus sur Instagram :</p>
             <img src="volcano_le_groupe_qr.png" alt="QR Code Instagram Volcano" class="qr-code">
         </div>
+        
+        <p class="copyright">&copy; 2026 VOLCANO - Tous droits réservés au Chaos.</p>
     </footer>
 
 </body>
 </html>
+
