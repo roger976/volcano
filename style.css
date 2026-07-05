@@ -1,9 +1,10 @@
 /* Importation des polices */
-@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Permanent+Marker&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght=700&family=Permanent+Marker&display=swap');
 
+/* Intégration de la police locale (Pinkblue.ttf garde son extension sur image_10.png) */
 @font-face {
     font-family: 'PinkBlue';
-    src: url('Pink Blue.ttf') format('truetype');
+    src: url('Pinkblue.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
 }
@@ -64,6 +65,7 @@ h2::after {
 
 /* --- Hero Banner Éruptif --- */
 .hero {
+    /* photo-groupe sans extension selon image_10.png */
     background: linear-gradient(rgba(10, 10, 11, 0.3), rgba(10, 10, 11, 0.95)), 
                 url('photo-groupe.JPG') no-repeat center center/cover;
     height: 75vh;
@@ -79,7 +81,6 @@ h2::after {
     width: 100%;
 }
 
-/* Effet Métal 3D Incandescent sur le nom du groupe */
 .hero-content h1 {
     font-family: 'PinkBlue', 'Oswald', 'Impact', sans-serif;
     font-size: 7rem;
@@ -106,10 +107,8 @@ h2::after {
     transition: transform 0.1s ease;
 }
 
-/* Effet Secousse Sismique au survol du logo */
 .hero-content h1:hover {
     animation: quake 0.15s infinite;
-    cursor: linear;
 }
 
 .hero-content p {
@@ -132,7 +131,7 @@ h2::after {
     font-weight: bold;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    border-radius: 0px; /* Style tranchant */
+    border-radius: 0px; 
     border: 2px solid var(--color-magma);
     background: #000;
     color: #fff;
@@ -161,7 +160,7 @@ h2::after {
     box-shadow: 0px 0px 8px var(--color-gold-lava);
 }
 
-/* --- Section Lecteur Audio Métal --- */
+/* --- Section Lecteur Audio --- */
 .media-card {
     background-color: var(--color-ash);
     border-left: 6px solid var(--color-magma);
@@ -237,10 +236,10 @@ audio::-webkit-media-controls-panel {
     border-bottom: 1px solid var(--color-fire);
 }
 
-/* --- Galerie Photo "Grille Brutale" --- */
+/* --- Galerie Photo --- */
 .gallery-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Corrigé ici */
+    grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
 
@@ -323,7 +322,7 @@ footer a:hover {
     background: #000;
 }
 
-/* QR Code Incandescent */
+/* QR Code */
 .qr-container {
     margin-top: 40px;
     background: var(--color-ash);
@@ -357,7 +356,7 @@ footer a:hover {
     color: #555;
 }
 
-/* --- ANIMATION : Tremblement Volcanique --- */
+/* Animations tremblements */
 @keyframes quake {
     0% { transform: translate(1px, 1px) rotate(0deg); }
     10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -372,37 +371,23 @@ footer a:hover {
     100% { transform: translate(1px, -2px) rotate(-1deg); }
 }
 
-/* --- RESPONSIVE : Tablettes --- */
+/* Responsive */
 @media screen and (max-width: 768px) {
     .gallery-grid { grid-template-columns: repeat(2, 1fr); }
     .hero-content h1 { font-size: 5rem; }
-    .social-links a { display: inline-block; margin: 10px; }
 }
 
-/* --- RESPONSIVE : Smartphones --- */
 @media screen and (max-width: 480px) {
     .container { padding: 40px 15px; }
     h2 { font-size: 1.8rem; }
     .gallery-grid { grid-template-columns: 1fr; }
-    .hero-content h1 { font-size: 3.5rem; letter-spacing: 1px; }
-    .hero-content p { font-size: 1.1rem; letter-spacing: 3px; }
-    
-    .concert-table th { display: none; } /* On cache les headers sur petit mobile pour condenser */
-    .concert-table td {
-        display: block;
-        text-align: right;
-        padding: 10px 15px;
-        border-bottom: none;
-    }
-    .concert-table td:last-child {
-        border-bottom: 2px solid var(--color-magma);
-        padding-bottom: 20px;
-    }
+    .hero-content h1 { font-size: 3.5rem; }
+    .concert-table th { display: none; } 
+    .concert-table td { display: block; text-align: right; }
     .concert-table td::before {
         content: attr(data-label);
         float: left;
-        font-family: 'Oswald', sans-serif;
         color: var(--color-magma);
-        text-transform: uppercase;
+        font-family: 'Oswald', sans-serif;
     }
 }
