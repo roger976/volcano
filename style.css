@@ -67,7 +67,7 @@ h2::after {
 .hero {
     /* photo-groupe sans extension selon image_10.png */
     background: linear-gradient(rgba(10, 10, 11, 0.3), rgba(10, 10, 11, 0.95)), 
-                url('photo-groupe.JPG') no-repeat center center/cover;
+                url('485e7071-a826-4f9a-bfa7-7662b43d7c6e.jpeg') no-repeat center center/cover;
     height: 75vh;
     display: flex;
     align-items: flex-end; 
